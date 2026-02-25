@@ -14,6 +14,7 @@ backend:
   repo: RAR1741/redalert1741.org
   branch: master
   squash_merges: true
+  site_domain: roaring-hummingbird-de43cb.netlify.app
 
 # -----------------------------------------------------------------------------
 # Editorial Workflow — draft → in review → ready (via Git branches + PRs)
