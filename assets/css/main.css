@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  /* Primary button — solid red */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg
+           bg-rally-600 text-white font-semibold
+           transition-all duration-200
+           hover:bg-rally-700 hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-rally-500 focus:ring-offset-2;
+  }
+
+  /* Secondary button — outlined red */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg
+           border-2 border-rally-600 text-rally-600 font-semibold
+           transition-all duration-200
+           hover:bg-rally-600 hover:text-white
+           focus:outline-none focus:ring-2 focus:ring-rally-500 focus:ring-offset-2;
+  }
+
+  /* White button — for dark backgrounds */
+  .btn-white {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg
+           bg-white text-rally-600 font-semibold
+           transition-all duration-200
+           hover:bg-gray-100 hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rally-600;
+  }
+}

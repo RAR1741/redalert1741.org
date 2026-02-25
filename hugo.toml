@@ -1,0 +1,42 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Red Alert Robotics"
+copyright = "Red Alert Robotics"
+
+[params]
+  description = "FIRST Robotics Team 1741 — Red Alert Robotics from Center Grove High School in Greenwood, Indiana"
+  teamNumber = 1741
+  teamName = "Red Alert Robotics"
+  school = "Center Grove High School"
+  location = "Greenwood, Indiana"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Robots"
+    url = "/robots/"
+    weight = 3
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 4
+  [[menu.main]]
+    name = "Sponsors"
+    url = "/sponsors/"
+    weight = 5
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
