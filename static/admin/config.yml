@@ -9,7 +9,7 @@
 # =============================================================================
 
 # -----------------------------------------------------------------------------
-# Backend — GitHub
+# Backend — GitHub (PKCE auth — no external OAuth proxy needed)
 # -----------------------------------------------------------------------------
 backend:
   name: github
@@ -17,9 +17,8 @@ backend:
   branch: master
   # Squash merge editorial workflow PRs into a single commit
   squash_merges: true
-  # Auth
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  auth_type: pkce
+  app_id: Ov23lii2LNTwUHqs5UBt
 
 # -----------------------------------------------------------------------------
 # Editorial Workflow — draft → in review → ready (via Git branches + PRs)
