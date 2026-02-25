@@ -1,0 +1,35 @@
+# Sponsor tiers and information
+# Logos should be placed in static/images/sponsors/
+
+tiers:
+  - name: "Platinum"
+    level: 1
+    sponsors:
+      - name: "Crossroads Engineers"
+        # logo: "/images/sponsors/crossroads-engineers.png"
+        url: ""
+      - name: "Poul Due Jensen Foundation / Peerless Pump Company"
+        # logo: "/images/sponsors/grundfos.png"
+        url: ""
+      - name: "Toyota Materials Handling"
+        # logo: "/images/sponsors/tmh.png"
+        url: ""
+
+  - name: "Gold"
+    level: 2
+    sponsors:
+      - name: "Center Grove Education Foundation"
+        # logo: "/images/sponsors/cgef.png"
+        url: ""
+      - name: "Cummins Inc."
+        # logo: "/images/sponsors/cummins.png"
+        url: ""
+
+  - name: "Silver"
+    level: 3
+    sponsors:
+      - name: "Red Alert Robotics Parent Organization"
+        # logo: "/images/sponsors/rapo.png"
+        url: ""
+
+# sponsorship_packet: "/files/sponsorship-packet-2025.pdf"
