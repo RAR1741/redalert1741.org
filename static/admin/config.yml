@@ -1,0 +1,408 @@
+# =============================================================================
+# Decap CMS Configuration for Red Alert Robotics (Team 1741)
+# =============================================================================
+# Docs: https://decapcms.org/docs/
+#
+# SETUP: You need a GitHub OAuth app to use this CMS in production.
+# See docs/CMS-SETUP.md for instructions.
+# For local development, use: npx decap-server
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Backend — GitHub
+# -----------------------------------------------------------------------------
+backend:
+  name: github
+  repo: RAR1741/redalert1741.org
+  branch: master
+  # Squash merge editorial workflow PRs into a single commit
+  squash_merges: true
+  # Auth
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+# -----------------------------------------------------------------------------
+# Editorial Workflow — draft → in review → ready (via Git branches + PRs)
+# -----------------------------------------------------------------------------
+publish_mode: editorial_workflow
+
+# -----------------------------------------------------------------------------
+# Media — uploaded images go to static/images/uploads/
+# -----------------------------------------------------------------------------
+media_folder: static/images/uploads
+public_folder: /images/uploads
+
+# -----------------------------------------------------------------------------
+# Site preview URL (used for deploy previews — optional)
+# -----------------------------------------------------------------------------
+# site_url: https://redalert1741.org
+# display_url: https://redalert1741.org
+
+# -----------------------------------------------------------------------------
+# Slug defaults
+# -----------------------------------------------------------------------------
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+# =============================================================================
+# COLLECTIONS
+# =============================================================================
+collections:
+
+  # ===========================================================================
+  # Blog Posts
+  # ===========================================================================
+  - name: blog
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: content/blog
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "blog/{{slug}}"
+    summary: "{{title}} — {{year}}/{{month}}/{{day}}"
+    sortable_fields: ["title", "date"]
+    fields:
+      - label: "Title"
+        name: title
+        widget: string
+
+      - label: "Publish Date"
+        name: date
+        widget: datetime
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+
+      - label: "Description"
+        name: description
+        widget: text
+        required: false
+        hint: "Short summary shown in blog listings and SEO meta tags."
+
+      - label: "Featured Image"
+        name: image
+        widget: image
+        required: false
+        hint: "Optional hero image for the post."
+
+      - label: "Tags"
+        name: tags
+        widget: list
+        required: false
+        hint: "Comma-separated tags (e.g. announcement, build-season, competition)."
+
+      - label: "Draft"
+        name: draft
+        widget: boolean
+        default: false
+        hint: "Draft posts are only visible in development (hugo server -D)."
+
+      - label: "Body"
+        name: body
+        widget: markdown
+
+  # ===========================================================================
+  # Robots
+  # ===========================================================================
+  - name: robots
+    label: "Robots"
+    label_singular: "Robot"
+    folder: content/robots
+    create: true
+    slug: "{{year}}-{{slug}}"
+    preview_path: "robots/{{slug}}"
+    summary: "{{year}} — {{title}}"
+    sortable_fields: ["title", "year"]
+    fields:
+      - label: "Robot Name"
+        name: title
+        widget: string
+
+      - label: "Year"
+        name: year
+        widget: number
+        value_type: int
+        min: 2006
+        max: 2099
+
+      - label: "FRC Game"
+        name: game
+        widget: string
+        hint: "The name of the FRC game that year (e.g. REEFSCAPE, Infinite Recharge)."
+
+      - label: "Description"
+        name: description
+        widget: text
+        required: false
+        hint: "One-line summary shown on robot cards."
+
+      - label: "Photo"
+        name: image
+        widget: image
+        required: false
+        hint: "Primary photo of the robot."
+
+      - label: "Weight"
+        name: weight_lbs
+        widget: string
+        required: false
+        hint: "e.g. 120 lbs"
+
+      - label: "Drivetrain"
+        name: drivetrain
+        widget: string
+        required: false
+        hint: "e.g. West Coast, Swerve, Mecanum"
+
+      - label: "Programming Language"
+        name: language
+        widget: string
+        required: false
+        hint: "e.g. Java, C++, Python"
+
+      - label: "Awards"
+        name: awards
+        widget: list
+        required: false
+        hint: "Awards won during this season."
+
+      - label: "Draft"
+        name: draft
+        widget: boolean
+        default: false
+
+      - label: "Body"
+        name: body
+        widget: markdown
+
+  # ===========================================================================
+  # Pages — edit existing section landing pages
+  # ===========================================================================
+  - name: pages
+    label: "Pages"
+    label_singular: "Page"
+    files:
+      - name: home
+        label: "Homepage"
+        file: content/_index.md
+        fields:
+          - label: "Title"
+            name: title
+            widget: string
+
+          - label: "SEO Description"
+            name: description
+            widget: text
+
+          - label: "Hero Tagline"
+            name: hero_description
+            widget: text
+            hint: "The main tagline displayed in the hero section."
+
+          - label: "Primary Button Text"
+            name: hero_cta_primary_text
+            widget: string
+
+          - label: "Primary Button URL"
+            name: hero_cta_primary_url
+            widget: string
+
+          - label: "Secondary Button Text"
+            name: hero_cta_secondary_text
+            widget: string
+
+          - label: "Secondary Button URL"
+            name: hero_cta_secondary_url
+            widget: string
+
+          - label: "About Section Title"
+            name: about_title
+            widget: string
+
+          - label: "Feature Cards"
+            name: features
+            widget: list
+            fields:
+              - label: "Title"
+                name: title
+                widget: string
+              - label: "Description"
+                name: description
+                widget: text
+              - label: "Icon"
+                name: icon
+                widget: select
+                options: ["robot", "calendar", "heart"]
+                hint: "Icon displayed on the card."
+              - label: "Link Text"
+                name: link
+                widget: object
+                fields:
+                  - label: "Text"
+                    name: text
+                    widget: string
+                  - label: "URL"
+                    name: url
+                    widget: string
+
+          - label: "Body"
+            name: body
+            widget: markdown
+            hint: "Content shown in the About section on the homepage."
+
+      - name: about
+        label: "About"
+        file: content/about/_index.md
+        fields:
+          - label: "Title"
+            name: title
+            widget: string
+          - label: "Description"
+            name: description
+            widget: text
+
+      - name: sponsors
+        label: "Sponsors"
+        file: content/sponsors/_index.md
+        fields:
+          - label: "Title"
+            name: title
+            widget: string
+          - label: "Description"
+            name: description
+            widget: text
+
+      - name: contact
+        label: "Contact"
+        file: content/contact/_index.md
+        fields:
+          - label: "Title"
+            name: title
+            widget: string
+          - label: "Description"
+            name: description
+            widget: text
+
+      - name: robots_index
+        label: "Robots Page"
+        file: content/robots/_index.md
+        fields:
+          - label: "Title"
+            name: title
+            widget: string
+          - label: "Description"
+            name: description
+            widget: text
+
+      - name: blog_index
+        label: "Blog Page"
+        file: content/blog/_index.md
+        fields:
+          - label: "Title"
+            name: title
+            widget: string
+          - label: "Description"
+            name: description
+            widget: text
+
+  # ===========================================================================
+  # Settings — data files
+  # ===========================================================================
+  - name: settings
+    label: "Settings"
+    files:
+      - name: team
+        label: "Team Info"
+        file: data/team.yml
+        fields:
+          - label: "Team Number"
+            name: number
+            widget: number
+            value_type: int
+
+          - label: "Team Name"
+            name: name
+            widget: string
+
+          - label: "School"
+            name: school
+            widget: string
+
+          - label: "Location"
+            name: location
+            widget: string
+
+          - label: "Rookie Year"
+            name: rookie_year
+            widget: number
+            value_type: int
+
+          - label: "Social Links"
+            name: social
+            widget: object
+            fields:
+              - label: "The Blue Alliance"
+                name: thebluealliance
+                widget: string
+                required: false
+              - label: "GitHub"
+                name: github
+                widget: string
+                required: false
+              - label: "Instagram"
+                name: instagram
+                widget: string
+                required: false
+              - label: "Twitter / X"
+                name: twitter
+                widget: string
+                required: false
+              - label: "Facebook"
+                name: facebook
+                widget: string
+                required: false
+              - label: "YouTube"
+                name: youtube
+                widget: string
+                required: false
+
+      - name: sponsors
+        label: "Sponsors"
+        file: data/sponsors.yml
+        fields:
+          - label: "Sponsor Tiers"
+            name: tiers
+            widget: list
+            fields:
+              - label: "Tier Name"
+                name: name
+                widget: string
+                hint: "e.g. Platinum, Gold, Silver, Bronze"
+              - label: "Tier Level"
+                name: level
+                widget: number
+                value_type: int
+                hint: "1 = highest tier, 2 = second, etc."
+              - label: "Sponsors"
+                name: sponsors
+                widget: list
+                fields:
+                  - label: "Sponsor Name"
+                    name: name
+                    widget: string
+                  - label: "Logo"
+                    name: logo
+                    widget: image
+                    required: false
+                  - label: "Website URL"
+                    name: url
+                    widget: string
+                    required: false
+
+          - label: "Sponsorship Packet URL"
+            name: sponsorship_packet
+            widget: string
+            required: false
+            hint: "Link to downloadable sponsorship packet PDF."
