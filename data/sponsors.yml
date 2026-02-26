@@ -1,35 +1,26 @@
-# Sponsor tiers and information
-# Logos should be placed in static/images/sponsors/
-
 tiers:
-  - name: "Platinum"
+  - name: Platinum
     level: 1
     sponsors:
-      - name: "Crossroads Engineers"
-        # logo: "/images/sponsors/crossroads-engineers.png"
+      - name: Crossroads Engineers
         url: ""
-      - name: "Poul Due Jensen Foundation / Peerless Pump Company"
-        # logo: "/images/sponsors/grundfos.png"
+      - name: Poul Due Jensen Foundation / Peerless Pump Company
         url: ""
-      - name: "Toyota Materials Handling"
-        # logo: "/images/sponsors/tmh.png"
+      - name: Toyota Materials Handling
         url: ""
-
-  - name: "Gold"
+  - name: Gold
     level: 2
     sponsors:
-      - name: "Center Grove Education Foundation"
-        # logo: "/images/sponsors/cgef.png"
+      - name: Center Grove Education Foundation
         url: ""
-      - name: "Cummins Inc."
-        # logo: "/images/sponsors/cummins.png"
+      - name: Cummins Inc.
         url: ""
-
-  - name: "Silver"
+  - name: Silver
     level: 3
     sponsors:
-      - name: "Red Alert Robotics Parent Organization"
-        # logo: "/images/sponsors/rapo.png"
+      - name: Red Alert Robotics Parent Organization
         url: ""
-
-# sponsorship_packet: "/files/sponsorship-packet-2025.pdf"
+      - name: Test Sponsor
+        logo: https://api.images.cat/300/300/a9a984a9-4597-40d5-af30-919ddedf336f
+        url: https://cats.com/
+sponsorship_packet: https://www.redalert1741.org/wp-content/uploads/2023/08/FRC-Varsity-Sponsor-packages-form-2023-2024.pdf
