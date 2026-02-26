@@ -17,7 +17,7 @@ Last updated: 2026-02-26
 | 5 | **Team Leadership Structure** | `/about-us/captains/` | `/about/students/` | ✅ Done | Merged into Students page. Leadership structure diagram (Team-Structure-2023-24.jpg) displayed prominently. WordPress page was just a single image — same image now on beta Students page. |
 | 6 | **Past Robots** | `/robots/` | `/robots/` | ✅ Done | Beta has all 16 robots (2006–2019 from WordPress + 2020 & 2025). Full game descriptions and robot features migrated. Robot images migrated for Jaws (2014), A.N.D.Y. (2015), Black Widow (2017), Otariinae (2018), Kuiper (2019). Awards documented in body text. |
 | 7 | **Current Sponsors** | `/current-sponsors/` | `/sponsors/` | ✅ Done | All sponsor tiers migrated (Anchor, Gold, Silver, Bronze, Team Supporters) with 22 logos downloaded locally. Sponsor names, logos, and website links all match WordPress. Sponsorship packet PDF hosted locally. |
-| 8 | **Support Red Alert / Sponsor Info** | `/sponsor-red-alert/` | `/sponsors/become-a-sponsor/` | ✅ Done | Full pitch page migrated: hero, benefits list (inspire/engage/build/foster), culture-transforming message, tax-deductible callout, contact email (president@redalert1741.org), Sponsor Packages PDF link, team working photo. Linked from Sponsors dropdown in navbar. |
+| 8 | **Support Red Alert / Sponsor Info** | `/sponsor-red-alert/` | `/sponsors/become-a-sponsor/` | ✅ Done | Full pitch page migrated: hero, benefits list (inspire/engage/build/foster), culture-transforming message, tax-deductible callout, contact email (president@redalert1741.org), Sponsor Packages PDF link, Local Business Letter PDF link, team working photo. Linked from Sponsors dropdown in navbar. |
 | 9 | **Online Payments / Donate** | `/donate/` | ❌ None | ❌ Missing | Payment form for donations and student dues (PayPal integration). Mailing address for checks. |
 | 10 | **Calendar** | `/calendar/` | ❌ None | ❌ Missing | Embedded Google Calendar (via Advanced iFrame plugin). |
 | 11 | **Parents (RARPO)** | `/rarpo/` | `/about/parents/` | ✅ Done | Beta has full RARPO info: 501(c)(3) description, mission statement, 6 volunteering opportunity cards (parent meetings, Saturday lunches, snacks, tournament volunteers, finding sponsors, cheering), and Kroger Community Rewards section with re-registration reminder. Linked from About dropdown in navbar. |
@@ -130,7 +130,7 @@ All 16 robots (2006–2025) have been migrated to `/robots/` with full game desc
 |----------|---------------|----------|
 | Sponsor Packages Form (2023-2024) | `/wp-content/uploads/2023/08/FRC-Varsity-Sponsor-packages-form-2023-2024.pdf` | ✅ Yes — already linked from beta sponsors page |
 | Friends and Family Letter | `/wp-content/uploads/2022/05/Friends-and-Family-letter-General-2022-2023.pdf` | ⚠️ Decide — update or drop |
-| Business Support Letter | `/wp-content/uploads/2022/05/Local-business-letter-General-2022-2023.pdf` | ❌ 404 on WordPress — no longer available |
+| Business Support Letter | `/wp-content/uploads/2022/05/Local-business-letter-General-2022-2023.pdf` | ✅ Migrated — hosted locally, linked from Become a Sponsor page |
 | Safety Handbook (2019-2020) | `/wp-content/uploads/2020/02/2019-2020-Safety-Handbook-Final.pdf` | ⚠️ Decide — needs update |
 | Safety Study Guide | `/wp-content/uploads/2016/01/General_Safety_Guide.pdf` | ⚠️ Decide |
 | RARPO Scholarship Form (2022-2023) | `/wp-content/uploads/2022/09/RARPO-Scholarship-Form-2022-2023.pdf` | ⚠️ Decide |
