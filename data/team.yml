@@ -5,10 +5,10 @@ location: "Greenwood, Indiana"
 rookie_year: 2005
 
 social:
-  thebluealliance: "https://www.thebluealliance.com/team/1741"
+  facebook: "https://facebook.com/redalertrobotics"
+  twitter: "https://twitter.com/RedAlert1741"
+  instagram: "https://www.instagram.com/redalert1741/"
+  youtube: "https://www.youtube.com/user/redalert1741"
+  flickr: "https://www.flickr.com/photos/rar1741/"
   github: "https://github.com/RAR1741"
-  # Uncomment and fill in as needed:
-  # instagram: ""
-  # twitter: ""
-  # facebook: ""
-  # youtube: ""
+  thebluealliance: "https://www.thebluealliance.com/team/1741"

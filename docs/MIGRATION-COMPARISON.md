@@ -110,13 +110,13 @@ Home
 
 | Platform | WordPress | Beta |
 |----------|-----------|------|
-| Facebook | ✅ facebook.com/redalertrobotics | ❌ Missing |
-| Twitter/X | ✅ twitter.com/RedAlert1741 | ❌ Missing |
-| Instagram | ✅ instagram.com/redalert1741/ | ❌ Missing |
-| YouTube | ✅ youtube.com/user/redalert1741 | ❌ Missing |
-| Flickr | ✅ flickr.com/photos/rar1741/ | ❌ Missing |
+| Facebook | ✅ facebook.com/redalertrobotics | ✅ Footer link + icon |
+| Twitter/X | ✅ twitter.com/RedAlert1741 | ✅ Footer link + icon |
+| Instagram | ✅ instagram.com/redalert1741/ | ✅ Footer link + icon |
+| YouTube | ✅ youtube.com/user/redalert1741 | ✅ Footer link + icon |
+| Flickr | ✅ flickr.com/photos/rar1741/ | ✅ Footer link + icon |
 | The Blue Alliance | ❌ Not in header/footer | ✅ Footer link |
-| GitHub | ✅ Sidebar link | ✅ Footer link |
+| GitHub | ✅ Sidebar link | ✅ Footer link + icon |
 | FIRST Inspires | ❌ Not linked | ✅ Footer link |
 
 ---
@@ -179,7 +179,7 @@ All 16 robots (2006–2025) have been migrated to `/robots/` with full game desc
 
 ### 🔴 High Priority (core content visitors expect)
 1. ~~**Complete robot pages**~~ — ✅ All 16 robots migrated with full WP descriptions and images
-2. **Add social media links** — Facebook, Instagram, YouTube, Twitter to footer/header
+2. ~~**Add social media links**~~ — ✅ Done — Facebook, Instagram, YouTube, Twitter, Flickr, GitHub in footer (text links + icon bar)
 3. **Contact details** — Add mailing address and specific email contacts to Contact page
 4. ~~**Team history & accomplishments**~~ — ✅ Done — About page has full timeline (2005–today, 8 milestones)
 5. ~~**Full sponsor list with logos**~~ — ✅ All 23 sponsors migrated across 5 tiers with 22 logos
@@ -219,7 +219,7 @@ All 16 robots (2006–2025) have been migrated to `/robots/` with full game desc
 | Calendar | Google Calendar iFrame | ✅ Google Calendar embed (same calendar ID) |
 | Photo Galleries | NextGEN Gallery plugin | ❌ Not implemented |
 | Blog / Posts | WordPress posts | Hugo blog section |
-| Social Media Icons | Header bar (5 platforms) | Footer only (TBA, GitHub, FIRST) |
+| Social Media Icons | Header bar (5 platforms) | ✅ Footer — text links (7 platforms + FIRST) and icon bar (6 platforms) |
 | Mobile Navigation | Hamburger menu | Hamburger menu |
 | Search | WordPress search | ❌ Not implemented |
 | Analytics | Unknown | ❌ Not implemented |
