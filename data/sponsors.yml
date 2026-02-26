@@ -47,8 +47,10 @@ tiers:
       - name: A New Smile Dental
         logo: /images/sponsors/a-new-smile.png
         url: https://www.ournewdentist.com/
+      - name: Willo Financial Solutions
+        logo: /images/sponsors/willo-financial.png
+        url: ""
       - name: Nelson Global Products
-        logo: /images/sponsors/dark-logo.png
         url: ""
       - name: ZenBusiness
         logo: /images/sponsors/zenbusiness.jpg
