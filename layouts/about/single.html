@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="relative bg-gray-900 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-rally-950 via-gray-900 to-gray-800"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <div class="text-center">
+      <p class="text-rally-400 font-semibold text-sm mb-3 tracking-widest uppercase">{{ .Parent.Title }}</p>
+      <h1 class="text-4xl md:text-5xl font-black text-white tracking-tight mb-4">{{ .Title }}</h1>
+      {{ with .Params.description }}
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+  <div class="absolute bottom-0 left-0 right-0">
+    <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full" preserveAspectRatio="none">
+      <path d="M0 60L1440 60L1440 0C1440 0 1200 45 720 45C240 45 0 0 0 0L0 60Z" fill="white"/>
+    </svg>
+  </div>
+</section>
+
+<!-- Content -->
+<section class="py-12 md:py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-rally-600 hover:prose-a:text-rally-700 prose-img:rounded-xl prose-img:shadow-lg">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

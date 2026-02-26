@@ -24,6 +24,22 @@ copyright = "Red Alert Robotics"
     name = "About"
     url = "/about/"
     weight = 2
+    identifier = "about"
+  [[menu.main]]
+    name = "Students"
+    url = "/about/students/"
+    weight = 1
+    parent = "about"
+  [[menu.main]]
+    name = "Parents"
+    url = "/about/parents/"
+    weight = 2
+    parent = "about"
+  [[menu.main]]
+    name = "Mentors"
+    url = "/about/mentors/"
+    weight = 3
+    parent = "about"
   [[menu.main]]
     name = "Robots"
     url = "/robots/"
