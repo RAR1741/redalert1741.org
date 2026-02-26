@@ -49,9 +49,13 @@ copyright = "Red Alert Robotics"
     url = "/blog/"
     weight = 4
   [[menu.main]]
+    name = "Calendar"
+    url = "/calendar/"
+    weight = 5
+  [[menu.main]]
     name = "Sponsors"
     url = "/sponsors/"
-    weight = 5
+    weight = 6
     identifier = "sponsors"
   [[menu.main]]
     name = "Become a Sponsor"
@@ -61,4 +65,4 @@ copyright = "Red Alert Robotics"
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 6
+    weight = 7

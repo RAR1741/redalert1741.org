@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="relative bg-gray-900 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-rally-950 via-gray-900 to-gray-800"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-5xl font-black text-white tracking-tight mb-4">{{ .Title }}</h1>
+      {{ with .Params.description }}
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+  <div class="absolute bottom-0 left-0 right-0">
+    <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full" preserveAspectRatio="none">
+      <path d="M0 60L1440 60L1440 0C1440 0 1200 45 720 45C240 45 0 0 0 0L0 60Z" fill="white"/>
+    </svg>
+  </div>
+</section>
+
+<!-- Calendar Embed -->
+<section class="py-12 md:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ with .Params.calendar_id }}
+    <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200">
+      <iframe
+        src="https://calendar.google.com/calendar/embed?src={{ . }}&color=%23CC0000&ctz={{ $.Params.timezone | default "America/New_York" }}&showTitle=0&showNav=1&showPrint=0&showTabs=1&showCalendars=0"
+        class="w-full"
+        style="min-height: 600px; height: 70vh; max-height: 900px;"
+        frameborder="0"
+        scrolling="no"
+        loading="lazy"
+      ></iframe>
+    </div>
+    {{ end }}
+
+    {{ with .Content }}
+    <div class="mt-12 prose prose-lg max-w-3xl mx-auto prose-headings:text-gray-900 prose-a:text-rally-600 hover:prose-a:text-rally-700">
+      {{ . }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

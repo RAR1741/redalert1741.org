@@ -19,7 +19,7 @@ Last updated: 2026-02-26
 | 7 | **Current Sponsors** | `/current-sponsors/` | `/sponsors/` | ✅ Done | All sponsor tiers migrated (Anchor, Gold, Silver, Bronze, Team Supporters) with 22 logos downloaded locally. Sponsor names, logos, and website links all match WordPress. Sponsorship packet PDF hosted locally. |
 | 8 | **Support Red Alert / Sponsor Info** | `/sponsor-red-alert/` | `/sponsors/become-a-sponsor/` | ✅ Done | Full pitch page migrated: hero, benefits list (inspire/engage/build/foster), culture-transforming message, tax-deductible callout, contact email (president@redalert1741.org), Sponsor Packages PDF link, Local Business Letter PDF link, team working photo. Linked from Sponsors dropdown in navbar. |
 | 9 | **Online Payments / Donate** | `/donate/` | ❌ None | ❌ Missing | Payment form for donations and student dues (PayPal integration). Mailing address for checks. |
-| 10 | **Calendar** | `/calendar/` | ❌ None | ❌ Missing | Embedded Google Calendar (via Advanced iFrame plugin). |
+| 10 | **Calendar** | `/calendar/` | `/calendar/` | ✅ Done | Google Calendar embedded via responsive iframe. Same calendar ID (`9ci2ntcrn05kf5kjgp65h72988@group.calendar.google.com`), timezone America/New_York. Styled with rounded corners and shadow. Fallback link to open directly in Google Calendar. |
 | 11 | **Parents (RARPO)** | `/rarpo/` | `/about/parents/` | ✅ Done | Beta has full RARPO info: 501(c)(3) description, mission statement, 6 volunteering opportunity cards (parent meetings, Saturday lunches, snacks, tournament volunteers, finding sponsors, cheering), and Kroger Community Rewards section with re-registration reminder. Linked from About dropdown in navbar. |
 | 12 | **Join Red Alert** | `/join/` | ❌ None | ❌ Missing | Student applications (FRC + FTC Google Forms), FIRST Inspires registration link, parent registration guide, team handbook download, mentor sign-up info, sponsor contact. |
 | 13 | **Safety** | `/safety/` | ❌ None | ❌ Missing | Safety handbook PDF, general safety test, machine test, UL Safety Portal link, FIRST Safety link, safety manual PDF. |
@@ -98,6 +98,7 @@ Home
 │   └── Mentors (/about/mentors/)
 ├── Robots (/robots/)
 ├── Blog (/blog/)
+├── Calendar (/calendar/)
 ├── Sponsors (/sponsors/) ▼
 │   └── Become a Sponsor (/sponsors/become-a-sponsor/)
 └── Contact (/contact/)
@@ -189,7 +190,7 @@ All 16 robots (2006–2025) have been migrated to `/robots/` with full game desc
 8. ~~**RARPO / Parents page**~~ — ✅ Done at `/about/parents/` with full RARPO info, volunteering, Kroger rewards
 9. **Summer Camp page** — Camp info, registration, contact
 10. **FTC Teams page** — Cyberstorm, Panic in the Buildroom, Disaster Management info
-11. **Calendar page** — Embed Google Calendar
+11. ~~**Calendar page**~~ — ✅ Done at `/calendar/` with Google Calendar embed
 12. **Safety page** — Consolidate both WP safety pages, link to handbooks/tests
 
 ### 🟢 Low Priority (archive / nice-to-have)
@@ -215,7 +216,7 @@ All 16 robots (2006–2025) have been migrated to `/robots/` with full game desc
 | Content Management | WordPress Admin | Decap CMS (/admin/) |
 | Contact Form | (not visible — may use WP plugin) | Formspree (needs form ID) |
 | Online Payments | PayPal embed | ❌ Not implemented |
-| Calendar | Google Calendar iFrame | ❌ Not implemented |
+| Calendar | Google Calendar iFrame | ✅ Google Calendar embed (same calendar ID) |
 | Photo Galleries | NextGEN Gallery plugin | ❌ Not implemented |
 | Blog / Posts | WordPress posts | Hugo blog section |
 | Social Media Icons | Header bar (5 platforms) | Footer only (TBA, GitHub, FIRST) |
