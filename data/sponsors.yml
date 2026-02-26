@@ -1,26 +1,83 @@
 tiers:
-  - name: Platinum
-    level: 1
+  - name: Anchor
+    level: 0
     sponsors:
       - name: Crossroads Engineers
+        logo: /images/sponsors/crossroads-engineers.png
         url: ""
-      - name: Poul Due Jensen Foundation / Peerless Pump Company
+      - name: Center Grove Education Foundation
+        logo: /images/sponsors/cg-education-foundation.png
         url: ""
-      - name: Toyota Materials Handling
+      - name: Poul Due Jensen Foundation
+        logo: /images/sponsors/pdj-foundation.png
         url: ""
   - name: Gold
     level: 2
     sponsors:
-      - name: Center Grove Education Foundation
+      - name: Cummins
+        logo: /images/sponsors/cummins.png
+        url: https://www.cummins.com/
+      - name: Control Systems Concepts
+        logo: /images/sponsors/control-systems-concepts.jpg
         url: ""
-      - name: Cummins Inc.
+      - name: GreenStar Home Services
+        logo: /images/sponsors/greenstar-home-services.jpg
         url: ""
   - name: Silver
     level: 3
     sponsors:
-      - name: Red Alert Robotics Parent Organization
+      - name: GPD Group
+        logo: /images/sponsors/gpd-group.jpg
         url: ""
-      - name: Test Sponsor
-        logo: https://api.images.cat/300/300/a9a984a9-4597-40d5-af30-919ddedf336f
-        url: https://cats.com/
-sponsorship_packet: https://www.redalert1741.org/wp-content/uploads/2023/08/FRC-Varsity-Sponsor-packages-form-2023-2024.pdf
+      - name: Indiana State Police Alliance
+        logo: /images/sponsors/indiana-state-police.png
+        url: http://indianasfinest.com/
+      - name: Indiana Realty Pros
+        logo: /images/sponsors/indiana-realty-pros.png
+        url: http://indianarealtypros.com/
+      - name: INDISNAX
+        logo: /images/sponsors/indisnax.png
+        url: ""
+      - name: "Rise'n Roll"
+        logo: /images/sponsors/risen-roll.png
+        url: https://risenroll.com/
+  - name: Bronze
+    level: 4
+    sponsors:
+      - name: A New Smile Dental
+        logo: /images/sponsors/a-new-smile.png
+        url: https://www.ournewdentist.com/
+      - name: Nelson Global Products
+        logo: /images/sponsors/dark-logo.png
+        url: ""
+      - name: ZenBusiness
+        logo: /images/sponsors/zenbusiness.jpg
+        url: https://www.zenbusiness.com/
+      - name: Habig Injury Law
+        logo: /images/sponsors/habig-injury-law.png
+        url: https://habiginjurylaw.com/
+      - name: Kettering University Alumni Association
+        logo: /images/sponsors/kettering-alumni.jpeg
+        url: https://www.kettering.edu/alumni/alumni-association
+      - name: Tried & True Ale House
+        logo: /images/sponsors/tried-and-true.jpg
+        url: https://www.triedandtruealehouse.com/
+  - name: Team Supporters
+    level: 5
+    sponsors:
+      - name: Strange Brew Coffee House
+        logo: /images/sponsors/strange-brew.jpg
+        url: ""
+      - name: University of Indianapolis
+        logo: /images/sponsors/uindy.png
+        url: https://uindy.edu/cas/engineering/
+      - name: Connection
+        logo: /images/sponsors/connection.png
+        url: ""
+      - name: CMIT Solutions
+        logo: /images/sponsors/cmit-solutions.png
+        url: https://cmitsolutions.com/indianapolis-south/
+      - name: Texas Roadhouse
+        logo: /images/sponsors/texas-roadhouse.png
+        url: ""
+sponsorship_packet: /docs/FRC-Varsity-Sponsor-packages-form-2023-2024.pdf

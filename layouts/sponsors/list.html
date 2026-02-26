@@ -37,13 +37,22 @@
       {{ range . }}
         <div class="mb-16 last:mb-0">
           <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">
-            {{ if eq .name "Platinum" }}🏆{{ else if eq .name "Gold" }}🥇{{ else if eq .name "Silver" }}🥈{{ else if eq .name "Bronze" }}🥉{{ end }}
+            {{ if eq .name "Anchor" }}⚓{{ else if eq .name "Platinum" }}🏆{{ else if eq .name "Gold" }}🥇{{ else if eq .name "Silver" }}🥈{{ else if eq .name "Bronze" }}🥉{{ else if eq .name "Team Supporters" }}❤️{{ end }}
             {{ .name }} Sponsors
           </h2>
 
           {{ $colClass := "grid-cols-2 md:grid-cols-3 lg:grid-cols-4" }}
-          {{ if eq .level 1 }}
+          {{ if le .level 1 }}
             {{ $colClass = "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" }}
+          {{ else if eq .level 2 }}
+            {{ $colClass = "grid-cols-2 md:grid-cols-3" }}
+          {{ end }}
+
+          {{ $logoSize := "max-h-16 md:max-h-20" }}
+          {{ if le .level 1 }}
+            {{ $logoSize = "max-h-24 md:max-h-32" }}
+          {{ else if eq .level 2 }}
+            {{ $logoSize = "max-h-20 md:max-h-24" }}
           {{ end }}
 
           <div class="grid {{ $colClass }} gap-6">
@@ -52,11 +61,12 @@
                 {{ if .logo }}
                   {{ if .url }}
                     <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="block">
-                      <img src="{{ .logo }}" alt="{{ .name }}" class="max-h-16 md:max-h-20 w-auto object-contain group-hover:scale-105 transition-transform" loading="lazy">
+                      <img src="{{ .logo }}" alt="{{ .name }}" class="{{ $logoSize }} w-auto object-contain group-hover:scale-105 transition-transform" loading="lazy">
                     </a>
                   {{ else }}
-                    <img src="{{ .logo }}" alt="{{ .name }}" class="max-h-16 md:max-h-20 w-auto object-contain" loading="lazy">
+                    <img src="{{ .logo }}" alt="{{ .name }}" class="{{ $logoSize }} w-auto object-contain" loading="lazy">
                   {{ end }}
+                  <p class="mt-3 text-sm text-gray-500 text-center">{{ .name }}</p>
                 {{ else }}
                   <p class="text-center font-semibold text-gray-700 group-hover:text-rally-600 transition-colors">
                     {{ if .url }}
