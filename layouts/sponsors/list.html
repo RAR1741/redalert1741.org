@@ -38,7 +38,7 @@
         <div class="mb-16 last:mb-0">
           <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">
             {{ if eq .name "Anchor" }}⚓{{ else if eq .name "Platinum" }}🏆{{ else if eq .name "Gold" }}🥇{{ else if eq .name "Silver" }}🥈{{ else if eq .name "Bronze" }}🥉{{ else if eq .name "Team Supporters" }}❤️{{ end }}
-            {{ .name }} Sponsors
+            {{ if eq .name "Team Supporters" }}{{ .name }}{{ else }}{{ .name }} Sponsors{{ end }}
           </h2>
 
           {{ $colClass := "grid-cols-2 md:grid-cols-3 lg:grid-cols-4" }}
