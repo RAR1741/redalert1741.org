@@ -1,6 +1,3 @@
-# MD docs
-docs/**/*.md
-
 # Hugo build output
 /public/
 /resources/_gen/

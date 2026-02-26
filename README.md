@@ -36,11 +36,14 @@ Output goes to the `public/` directory.
 ├── assets/css/            # Tailwind CSS source
 ├── content/               # Markdown content (pages, blog posts, etc.)
 ├── data/                  # Structured data (team info, sponsors, etc.)
+├── docs/                  # Documentation (CMS setup guide, plan)
 ├── layouts/               # Hugo templates
 │   ├── _default/          # Base templates (single, list)
 │   ├── partials/          # Reusable components (header, footer)
 │   └── index.html         # Homepage
-├── static/                # Static files (images, favicon)
+├── static/
+│   ├── admin/             # Decap CMS (index.html + config.yml)
+│   └── images/            # Static files (images, favicon, uploads)
 ├── hugo.toml              # Hugo configuration
 └── tailwind.config.js     # Tailwind CSS configuration
 ```
@@ -57,7 +60,17 @@ Then edit the generated file in `content/blog/`. Set `draft: false` when ready t
 
 ### Editing Pages
 
-All content lives in the `content/` directory as Markdown files with YAML front matter. Edit them directly or use the CMS (coming soon).
+All content lives in the `content/` directory as Markdown files with YAML front matter. Edit them directly or use the CMS at `/admin/`.
+
+### Using the CMS
+
+Non-technical team members can edit content through the browser-based CMS:
+
+1. Go to `https://redalert1741.org/admin/` (or `http://localhost:1313/admin/` locally)
+2. Click **Login with GitHub**
+3. Create/edit blog posts, robot pages, sponsors, and more
+
+See [docs/CMS-SETUP.md](docs/CMS-SETUP.md) for full setup and usage instructions.
 
 ## 🛠️ Tech Stack
 
@@ -67,7 +80,7 @@ All content lives in the `content/` directory as Markdown files with YAML front 
 | CSS Framework | [Tailwind CSS](https://tailwindcss.com/) |
 | CI/CD | [GitHub Actions](.github/workflows/deploy.yml) |
 | Hosting | [GitHub Pages](https://pages.github.com/) |
-| CMS | Decap CMS *(planned)* |
+| CMS | [Decap CMS](https://decapcms.org/) (via Netlify OAuth) |
 
 ## 🚢 Deployment
 
