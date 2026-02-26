@@ -20,4 +20,7 @@ tiers:
     sponsors:
       - name: Red Alert Robotics Parent Organization
         url: ""
+      - name: Test Sponsor
+        logo: https://api.images.cat/300/300/a9a984a9-4597-40d5-af30-919ddedf336f
+        url: https://cats.com/
 sponsorship_packet: https://www.redalert1741.org/wp-content/uploads/2023/08/FRC-Varsity-Sponsor-packages-form-2023-2024.pdf
