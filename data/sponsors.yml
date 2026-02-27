@@ -11,6 +11,8 @@ tiers:
       - name: Poul Due Jensen Foundation
         logo: /images/sponsors/pdj-foundation.png
         url: ""
+  - name: Platinum
+    level: 3
   - name: Gold
     level: 2
     sponsors:
@@ -82,6 +84,4 @@ tiers:
       - name: Texas Roadhouse
         logo: /images/sponsors/texas-roadhouse.png
         url: ""
-  - name: Platinum
-    level: 3
 sponsorship_packet: /docs/FRC-Varsity-Sponsor-packages-form-2023-2024.pdf
