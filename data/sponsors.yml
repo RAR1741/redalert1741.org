@@ -38,7 +38,7 @@ tiers:
       - name: INDISNAX
         logo: /images/sponsors/indisnax.png
         url: ""
-      - name: "Rise'n Roll"
+      - name: Rise'n Roll
         logo: /images/sponsors/risen-roll.png
         url: https://risenroll.com/
   - name: Bronze
@@ -82,4 +82,6 @@ tiers:
       - name: Texas Roadhouse
         logo: /images/sponsors/texas-roadhouse.png
         url: ""
+  - name: Platinum
+    level: 3
 sponsorship_packet: /docs/FRC-Varsity-Sponsor-packages-form-2023-2024.pdf
