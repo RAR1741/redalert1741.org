@@ -12,7 +12,7 @@ tiers:
         logo: /images/sponsors/pdj-foundation.png
         url: ""
   - name: Platinum
-    level: 3
+    level: 1
   - name: Gold
     level: 2
     sponsors:
