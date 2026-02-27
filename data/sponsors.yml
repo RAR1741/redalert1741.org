@@ -11,6 +11,8 @@ tiers:
       - name: Poul Due Jensen Foundation
         logo: /images/sponsors/pdj-foundation.png
         url: ""
+  - name: Platinum
+    level: 1
   - name: Gold
     level: 2
     sponsors:
@@ -38,7 +40,7 @@ tiers:
       - name: INDISNAX
         logo: /images/sponsors/indisnax.png
         url: ""
-      - name: "Rise'n Roll"
+      - name: Rise'n Roll
         logo: /images/sponsors/risen-roll.png
         url: https://risenroll.com/
   - name: Bronze
