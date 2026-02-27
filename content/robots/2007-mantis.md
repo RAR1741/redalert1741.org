@@ -1,8 +1,8 @@
 ---
-title: "Mantis"
+title: Mantis
 year: 2007
-game: "Rack 'n Roll"
-description: "Built to lift and place inner tubes on racks with a gripping claw."
+game: Rack 'n Roll
+description: Built to lift and place inner tubes on racks with a gripping claw....
 image: ""
 draft: false
 ---
